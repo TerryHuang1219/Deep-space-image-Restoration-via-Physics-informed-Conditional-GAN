@@ -1,4 +1,5 @@
 # Deep-Space Image Restoration via Physics-Informed Conditional GAN (PI-cGAN)
+# 本研究為**旺宏科學獎（Macronix Science Awards）**之參賽作品。
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange)
