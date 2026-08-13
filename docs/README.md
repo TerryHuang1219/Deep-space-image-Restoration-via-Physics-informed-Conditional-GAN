@@ -19,17 +19,21 @@ SSIM、Phase Consistency Error 與 Linear Flux Error 等指標進行模型評估
 影，並將光通量誤差由平均 214.66% 降低至 4.65%，在提升影像細節復原能力的同時，兼顧
 物理一致性與科學合理性，提供一套具備工程應用潛力之深空影像重建方法。
 
-## 專案架構 (Repository Structure)
+## 📁 專案架構 (Repository Structure)
+
+```text
 .
 ├── Data dealing tool/                   # 天文影像數據預處理模組
 │   └── astro cGAN dataset dealing auto.ipynb
 ├── Model/                               # 核心模型架構與各階段訓練歷程
-│   ├── basic cGAN model.ipynb           # 基準測試模型 (Baseline)
 │   ├── PI-cGAN model I.ipynb            # PI-cGAN 演進版本 I
 │   ├── PI-cGAN model II.ipynb           # PI-cGAN 演進版本 II
 │   ├── PI-cGAN model III.ipynb          # PI-cGAN 演進版本 III
+│   ├── PI-cGAN model IV.1.ipynb         # PI-cGAN 演進版本 IV.1
 │   ├── PI-cGAN model IV.ipynb           # PI-cGAN 演進版本 IV
-│   ├── PI-cGAN model IV.1.ipynb         # PI-cGAN 演進版本 IV.1 
-│   └── PI-cGAN model V.ipynb            # PI-cGAN 演進版本 V
+│   ├── PI-cGAN model V.ipynb            # PI-cGAN 演進版本 V
+│   └── basic cGAN model.ipynb           # 基準測試模型 (Baseline)
+├── docs/                                # 競賽文件與報告
+│   ├── README.md                        # 專案說明文件
+│   └── SA25-721_abstract.pdf            # 旺宏科學獎參賽摘要
 ├── .gitignore                           # Git 忽略檔案設定
-└── README.md                            # 專案總說明文件
