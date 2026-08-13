@@ -1,9 +1,10 @@
 # Deep-Space Image Restoration via Physics-Informed Conditional GAN (PI-cGAN)
-# 本研究為**旺宏科學獎（Macronix Science Awards）**之參賽作品。
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-NASA%20FITS-blueviolet)
+
+# 本研究為旺宏科學獎（Macronix Science Awards）之參賽作品。
 
 ## 專案簡介 (Abstract)
 本研究針對深度學習技術應用於深空影像重建時，在極低信噪比（SNR）環境下因過度
@@ -19,7 +20,6 @@ SSIM、Phase Consistency Error 與 Linear Flux Error 等指標進行模型評估
 物理一致性與科學合理性，提供一套具備工程應用潛力之深空影像重建方法。
 
 ## 專案架構 (Repository Structure)
-```text
 .
 ├── Data dealing tool/                   # 天文影像數據預處理模組
 │   └── astro cGAN dataset dealing auto.ipynb
