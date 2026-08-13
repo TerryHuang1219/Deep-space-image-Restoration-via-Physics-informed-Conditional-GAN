@@ -4,7 +4,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-NASA%20FITS-blueviolet)
 
-# 本研究為旺宏科學獎（Macronix Science Awards）之參賽作品。
+# 本研究為旺宏科學獎（Macronix Science Awards）之參賽作品
 
 ## 專案簡介 (Abstract)
 本研究針對深度學習技術應用於深空影像重建時，在極低信噪比（SNR）環境下因過度
