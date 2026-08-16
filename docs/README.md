@@ -19,7 +19,7 @@ SSIM、Phase Consistency Error 與 Linear Flux Error 等指標進行模型評估
 影，並將光通量誤差由平均 214.66% 降低至 4.65%，在提升影像細節復原能力的同時，兼顧
 物理一致性與科學合理性，提供一套具備工程應用潛力之深空影像重建方法。
 
-## 📁 專案架構 (Repository Structure)
+## 專案架構 (Repository Structure)
 
 ```text
 .
