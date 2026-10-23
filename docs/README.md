@@ -15,17 +15,17 @@ Experimental results demonstrate that, compared to a standard Basic cGAN, the pr
 
 ## Repository Structure
 .
-├── Data dealing tool/                   # Astronomical image preprocessing module
+├── Data dealing tool/
 │   └── astro cGAN dataset dealing auto.ipynb
-├── Model/                               # Core architectures and multi-stage training pipelines
-│   ├── PI-cGAN model I.ipynb            # PI-cGAN iteration I
-│   ├── PI-cGAN model II.ipynb           # PI-cGAN iteration II
-│   ├── PI-cGAN model III.ipynb          # PI-cGAN iteration III
-│   ├── PI-cGAN model IV.1.ipynb         # PI-cGAN iteration IV.1
-│   ├── PI-cGAN model IV.ipynb           # PI-cGAN iteration IV
-│   ├── PI-cGAN model V.ipynb            # PI-cGAN iteration V
-│   └── basic cGAN model.ipynb           # Baseline model (Basic cGAN)
-├── docs/                                # Competition documentation and reports
-│   ├── README.md                        # Project documentation
-│   └── SA25-721_abstract.pdf            # Macronix Science Awards submission abstract
-├── .gitignore                           # Git ignore configuration
+├── Model/
+│   ├── PI-cGAN model I.ipynb
+│   ├── PI-cGAN model II.ipynb
+│   ├── PI-cGAN model III.ipynb
+│   ├── PI-cGAN model IV.1.ipynb
+│   ├── PI-cGAN model IV.ipynb
+│   ├── PI-cGAN model V.ipynb
+│   └── basic cGAN model.ipynb
+├── docs/
+│   ├── README.md
+│   └── SA25-721_abstract.pdf
+└── .gitignore
