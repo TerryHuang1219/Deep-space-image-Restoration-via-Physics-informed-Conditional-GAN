@@ -4,36 +4,28 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-NASA%20FITS-blueviolet)
 
-# 本研究為旺宏科學獎25屆（Macronix Science Awards）之佳作
+# Honorable Mention, 25th Macronix Science Awards
 
-## 專案簡介 (Abstract)
-本研究針對深度學習技術應用於深空影像重建時，在極低信噪比（SNR）環境下因過度
-擬合所產生之「幻覺偽影」及物理能量失真等核心問題，提出相應解決方案。現有多數純視
-覺導向模型雖能提升影像解析度，卻可能生成缺乏物理依據之假結構，甚至違背光通量守恆
-原則，影響天文觀測之科學真實性。
- 為改善上述問題，本研究提出融合天文物理先驗知識之生成對抗網路（Physics-Informed
-Conditional GAN, PI-cGAN），以 cGAN 為基礎結合物理損失函數，並使用 NASA 公開 FITS
-天文影像資料建構訓練資料集，透過多版本模型迭代優化物理約束策略。研究以 PSNR、
-SSIM、Phase Consistency Error 與 Linear Flux Error 等指標進行模型評估與參數調整。
- 實驗結果顯示，相較於傳統 Basic cGAN，本研究提出之 PI-cGAN 可有效抑制幻覺偽
-影，並將光通量誤差由平均 214.66% 降低至 4.65%，在提升影像細節復原能力的同時，兼顧
-物理一致性與科學合理性，提供一套具備工程應用潛力之深空影像重建方法。
+## Abstract
+This study proposes a solution to key challenges in deep learning-based deep-space image reconstruction—specifically "hallucination artifacts" and physical energy distortions caused by overfitting in extremely low signal-to-noise ratio (SNR) environments. While most existing vision-centric models can improve image resolution, they frequently generate unphysical spurious structures and violate flux conservation principles, thereby compromising the scientific fidelity of astronomical observations.
 
-## 專案架構 (Repository Structure)
+To address these limitations, this research introduces a Physics-Informed Conditional Generative Adversarial Network (PI-cGAN) that incorporates astrophysical domain priors. Built upon a cGAN backbone integrated with domain-specific physical loss functions, the framework utilizes publicly available NASA FITS astronomical imaging data to construct training sets and iteratively refines physical constraint strategies across multiple model versions. Evaluation and parameter tuning were conducted using metrics including PSNR, SSIM, Phase Consistency Error, and Linear Flux Error.
 
-```text
+Experimental results demonstrate that, compared to a standard Basic cGAN, the proposed PI-cGAN effectively suppresses hallucination artifacts and reduces the average linear flux error from 214.66% to 4.65%. By balancing fine-detail recovery with physical consistency and scientific validity, this work delivers a viable deep-space image reconstruction approach with strong practical engineering potential.
+
+## Repository Structure
 .
-├── Data dealing tool/                   # 天文影像數據預處理模組
+├── Data dealing tool/                   # Astronomical image preprocessing module
 │   └── astro cGAN dataset dealing auto.ipynb
-├── Model/                               # 核心模型架構與各階段訓練歷程
-│   ├── PI-cGAN model I.ipynb            # PI-cGAN 演進版本 I
-│   ├── PI-cGAN model II.ipynb           # PI-cGAN 演進版本 II
-│   ├── PI-cGAN model III.ipynb          # PI-cGAN 演進版本 III
-│   ├── PI-cGAN model IV.1.ipynb         # PI-cGAN 演進版本 IV.1
-│   ├── PI-cGAN model IV.ipynb           # PI-cGAN 演進版本 IV
-│   ├── PI-cGAN model V.ipynb            # PI-cGAN 演進版本 V
-│   └── basic cGAN model.ipynb           # 基準測試模型 (Baseline)
-├── docs/                                # 競賽文件與報告
-│   ├── README.md                        # 專案說明文件
-│   └── SA25-721_abstract.pdf            # 旺宏科學獎參賽摘要
-├── .gitignore                           # Git 忽略檔案設定
+├── Model/                               # Core architectures and multi-stage training pipelines
+│   ├── PI-cGAN model I.ipynb            # PI-cGAN iteration I
+│   ├── PI-cGAN model II.ipynb           # PI-cGAN iteration II
+│   ├── PI-cGAN model III.ipynb          # PI-cGAN iteration III
+│   ├── PI-cGAN model IV.1.ipynb         # PI-cGAN iteration IV.1
+│   ├── PI-cGAN model IV.ipynb           # PI-cGAN iteration IV
+│   ├── PI-cGAN model V.ipynb            # PI-cGAN iteration V
+│   └── basic cGAN model.ipynb           # Baseline model (Basic cGAN)
+├── docs/                                # Competition documentation and reports
+│   ├── README.md                        # Project documentation
+│   └── SA25-721_abstract.pdf            # Macronix Science Awards submission abstract
+├── .gitignore                           # Git ignore configuration
