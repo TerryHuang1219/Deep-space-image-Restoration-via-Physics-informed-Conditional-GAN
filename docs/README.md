@@ -14,18 +14,20 @@ To address these limitations, this research introduces a Physics-Informed Condit
 Experimental results demonstrate that, compared to a standard Basic cGAN, the proposed PI-cGAN effectively suppresses hallucination artifacts and reduces the average linear flux error from 214.66% to 4.65%. By balancing fine-detail recovery with physical consistency and scientific validity, this work delivers a viable deep-space image reconstruction approach with strong practical engineering potential.
 
 ## Repository Structure
+```text
 .
-├── Data dealing tool/
+├── Data dealing tool/                # Astronomical image preprocessing module
 │   └── astro cGAN dataset dealing auto.ipynb
-├── Model/
-│   ├── PI-cGAN model I.ipynb
-│   ├── PI-cGAN model II.ipynb
-│   ├── PI-cGAN model III.ipynb
-│   ├── PI-cGAN model IV.1.ipynb
-│   ├── PI-cGAN model IV.ipynb
-│   ├── PI-cGAN model V.ipynb
-│   └── basic cGAN model.ipynb
-├── docs/
-│   ├── README.md
-│   └── SA25-721_abstract.pdf
-└── .gitignore
+├── Model/                            # Core architectures and multi-stage training pipelines
+│   ├── PI-cGAN model I.ipynb         # PI-cGAN iteration I
+│   ├── PI-cGAN model II.ipynb        # PI-cGAN iteration II
+│   ├── PI-cGAN model III.ipynb       # PI-cGAN iteration III
+│   ├── PI-cGAN model IV.1.ipynb      # PI-cGAN iteration IV.1
+│   ├── PI-cGAN model IV.ipynb        # PI-cGAN iteration IV
+│   ├── PI-cGAN model V.ipynb         # PI-cGAN iteration V
+│   └── basic cGAN model.ipynb        # Baseline model (Basic cGAN)
+├── docs/                             # Competition documentation and reports
+│   ├── README.md                     # Project documentation
+│   └── SA25-721_abstract.pdf         # Macronix Science Awards submission abstract
+└── .gitignore                        # Git ignore configuration
+```
